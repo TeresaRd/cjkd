@@ -2,7 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
 
-import counterStore from './store/counter'
+import store from './store/counter'
 
 import './app.scss'
 
@@ -12,15 +12,18 @@ import './app.scss'
 //   require('nerv-devtools')
 // }
 
-const store = {
-  counterStore
+const globalData = {
+  store
 }
 
 class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/exercise/exercise',
+      'pages/index/index',
+
+      'pages/examination/examination'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -42,7 +45,7 @@ class App extends Component {
   // 请勿修改此函数
   render () {
     return (
-      <Provider store={store}>
+      <Provider store={globalData}>
         <Index />
       </Provider>
     )
