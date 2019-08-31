@@ -2,7 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
 
-import store from './store/counter'
+import store from './store'
 
 import './app.scss'
 
@@ -12,7 +12,7 @@ import './app.scss'
 //   require('nerv-devtools')
 // }
 
-const globalData = {
+const globalStore = {
   store
 }
 
@@ -45,7 +45,7 @@ class App extends Component {
   // 请勿修改此函数
   render () {
     return (
-      <Provider store={globalData}>
+      <Provider store={globalStore}>
         <Index />
       </Provider>
     )

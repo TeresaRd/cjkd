@@ -12,20 +12,6 @@ class Index extends Component {
     navigationBarTitleText: '超级考典'
   }
 
-  componentWillMount () { }
-
-  componentWillReact () {
-
-  }
-
-  componentDidMount () { }
-
-  componentWillUnmount () { }
-
-  componentDidShow () { }
-
-  componentDidHide () { }
-
   navTo = (path) => {
     Taro.navigateTo({
       url: path

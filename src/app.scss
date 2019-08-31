@@ -1,6 +1,9 @@
 View {
   box-sizing: border-box;
 }
+.relative {
+  position: relative;
+}
 .t-center {
   text-align: center;
 }
@@ -9,6 +12,9 @@ View {
 }
 .fs10 {
   font-size: 26px;
+}
+.fs11 {
+  font-size: 30px;
 }
 .fs12 {
   font-size: 32px;
@@ -27,6 +33,18 @@ View {
   margin-top: 40px;
 }
 // padding
+.pd-10 {
+  padding: 10px;
+}
+.pd-20 {
+  padding: 20px;
+}
+.pd-30 {
+  padding: 30px;
+}
+.pd-40 {
+  padding: 40px;
+}
 .pt-10 {
   padding-top: 10px;
 }
@@ -38,4 +56,18 @@ View {
 }
 .pt-40 {
   padding-top: 40px;
+}
+.app-title {
+  padding-left: 40px;
+  position: relative;
+}
+.app-title:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 4PX;
+  height: 100%;
+  background-color: lightseagreen;
 }
