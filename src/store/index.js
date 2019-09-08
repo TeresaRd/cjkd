@@ -133,6 +133,7 @@ class Store {
     }
   }
   @action clearError() {
+    Taro.showLoading();
     clearError(this.userInfo.userId).then(data => {
       Taro.hideLoading();
       Taro.showToast({title: '清除成功'});
