@@ -2,7 +2,7 @@
   width: 100%;
   position: absolute;
   top: 50%;
-  transform: translateY(-70%);
+  transform: translateY(-50%);
 }
 .link {
   border-radius: 50%;
@@ -30,4 +30,6 @@
   //background: -webkit-radial-gradient(white 5%, cornflowerblue 30%);
   background: cornflowerblue;
 }
-
+.bg-third {
+  background: #ca0c16;
+}
